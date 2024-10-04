@@ -1,0 +1,151 @@
+<!-- 
+    This is the main HTML file for the form validation project.
+    It includes a container div, a card div, and a form with input fields and error spans.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <!-- 
+        Link to the Bootstrap CSS file for styling.
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- 
+        Link to the custom CSS file for additional styling.
+    -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        Container div to hold the card and form.
+    -->
+    <div class="container">
+        <!-- 
+            Row div to hold the card.
+        -->
+        <div class="row">
+            <!-- 
+                Column div to hold the card, offset to the right by 3 columns.
+            -->
+            <div class="col-md-6 offset-md-3">
+                <!-- 
+                    Card div to hold the form.
+                -->
+                <div class="card">
+                    <!-- 
+                        Card header div to hold the title.
+                    -->
+                    <div class="card-header">
+                        <!-- 
+                            Title of the form.
+                        -->
+                        <h2>Form Validation</h2>
+                    </div>
+                    <!-- 
+                        Card body div to hold the form.
+                    -->
+                    <div class="card-body">
+                        <!-- 
+                            Form element to hold the input fields and error spans.
+                        -->
+                        <form id="myForm">
+                            <!-- 
+                                Form group div to hold the full name input field and error span.
+                            -->
+                            <div class="form-group">
+                                <!-- 
+                                    Label for the full name input field.
+                                -->
+                                <label for="fullName">Full Name:</label>
+                                <!-- 
+                                    Input field for the full name.
+                                -->
+                                <input type="text" id="fullName" name="fullName" required>
+                                <!-- 
+                                    Error span to display errors for the full name input field.
+                                -->
+                                <span id="fullNameError" class="error"></span>
+                            </div>
+                            <!-- 
+                                Form group div to hold the email input field and error span.
+                            -->
+                            <div class="form-group">
+                                <!-- 
+                                    Label for the email input field.
+                                -->
+                                <label for="email">Email ID:</label>
+                                <!-- 
+                                    Input field for the email.
+                                -->
+                                <input type="email" id="email" name="email" required>
+                                <!-- 
+                                    Error span to display errors for the email input field.
+                                -->
+                                <span id="emailError" class="error"></span>
+                            </div>
+                            <!-- 
+                                Form group div to hold the phone number input field and error span.
+                            -->
+                            <div class="form-group">
+                                <!-- 
+                                    Label for the phone number input field.
+                                -->
+                                <label for="phoneNumber">Phone Number:</label>
+                                <!-- 
+                                    Input field for the phone number.
+                                -->
+                                <input type="text" id="phoneNumber" name="phoneNumber" required>
+                                <!-- 
+                                    Error span to display errors for the phone number input field.
+                                -->
+                                <span id="phoneNumberError" class="error"></span>
+                            </div>
+                            <!-- 
+                                Form group div to hold the password input field and error span.
+                            -->
+                            <div class="form-group">
+                                <!-- 
+                                    Label for the password input field.
+                                -->
+                                <label for="password">Password:</label>
+                                <!-- 
+                                    Input field for the password.
+                                -->
+                                <input type="password" id="password" name="password" required>
+                                <!-- 
+                                    Error span to display errors for the password input field.
+                                -->
+                                <span id="passwordError" class="error"></span>
+                            </div>
+                            <!-- 
+                                Form group div to hold the confirm password input field and error span.
+                            -->
+                            <div class="form-group">
+                                <!-- 
+                                    Label for the confirm password input field.
+                                -->
+                                <label for="confirmPassword">Confirm Password:</label>
+                                <!-- 
+                                    Input field for the confirm password.
+                                -->
+                                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                                <!-- 
+                                    Error span to display errors for the confirm password input field.
+                                -->
+                                <span id="confirmPasswordError" class="error"></span>
+                            </div>
+                            <!-- 
+                                Submit button to submit the form.
+                            -->
+                            <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
